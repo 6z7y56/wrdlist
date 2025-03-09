@@ -108,10 +108,10 @@ wrdlist [OPTIONS] <PATTERN> [OPTIONAL]
 wrdlist "!#"
 
 # Generate a list of numbers from 1 to 3, reversed
-wrdlist -i "[1-3]"
+wrdlist -i "[1-5]"
 
 # Randomize the order of a word list
-wrdlist -r "[a-c]"
+wrdlist -r "[1-13]"
 
 ...more on wrdlist --help 
 ```
