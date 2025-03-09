@@ -87,7 +87,7 @@ wrdlist [OPTIONS] <PATTERN> [OPTIONAL]
 
 ### **Pattern Syntax:**
 
-- **`.`** with a character to keep it fixed in every word (e.g., `.a` means 'a' stays in place).
+- **`.`** with a character to keep it fixed in every word (`.a` means 'a' stays in place).
 - **`[start-end]`** for numeric ranges (`[1-3]` will generate 1, 2, 3).
 - **`!`** for any lowercase letter (a-z).
 - **`@`** for any uppercase letter (A-Z).
