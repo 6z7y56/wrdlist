@@ -112,6 +112,8 @@ wrdlist -i "[1-3]"
 
 # Randomize the order of a word list
 wrdlist -r "[a-c]"
+
+...more on wrdlist --help 
 ```
 
 > **Note:** Patterns must be enclosed in double quotes. For complex patterns, check how the output will look before continuing.
