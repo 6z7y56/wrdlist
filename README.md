@@ -1,3 +1,4 @@
+
 ---
 
 # **wrdlist**
@@ -18,12 +19,43 @@ A simple and efficient tool for generating custom word lists. Ideal for creating
 
 ## **Installation**
 
-```bash
-# Install using Cargo (Recommended)
-cargo install wrdlist
+### **Install Required Tools**
 
-# Make the tool globally accessible
+Before installing `wrdlist`, you need to install the necessary tools depending on your distribution.
+
+#### **Arch Linux:**
+
+```bash
+sudo pacman -S rust
+```
+
+#### **Debian/Ubuntu:**
+
+```bash
+sudo apt install rustc cargo
+```
+
+#### **Fedora:**
+
+```bash
+sudo dnf install rust
+```
+
+---
+
+### **Install `wrdlist` Using Cargo**
+
+After installing the required tools, you can install `wrdlist` using the `cargo` tool (Rust's package manager):
+
+```bash
+cargo install wrdlist
+```
+
+To make sure `wrdlist` is globally accessible, you can copy it to `/usr/bin` and make it executable:
+
+```bash
 sudo cp ~/.cargo/bin/wrdlist /usr/bin
+sudo chmod +x /usr/bin/wrdlist
 ```
 
 ---
@@ -55,7 +87,7 @@ wrdlist [OPTIONS] <PATTERN> [OPTIONAL]
 
 ### **Pattern Syntax:**
 
-- **`.`** with a character to keep it fixed in every word (`.a` means 'a' stays in place).
+- **`.`** with a character to keep it fixed in every word (e.g., `.a` means 'a' stays in place).
 - **`[start-end]`** for numeric ranges (`[1-3]` will generate 1, 2, 3).
 - **`!`** for any lowercase letter (a-z).
 - **`@`** for any uppercase letter (A-Z).
@@ -79,7 +111,7 @@ wrdlist "!#"
 wrdlist -i "[1-3]"
 
 # Randomize the order of a word list
-wrdlist -r "[1-6]"
+wrdlist -r "[a-c]"
 ```
 
 > **Note:** Patterns must be enclosed in double quotes. For complex patterns, check how the output will look before continuing.
