@@ -113,7 +113,7 @@ wrdlist -i "[1-5]"
 # Randomize the order of a word list
 wrdlist -r "[1-13].X.d"
 
-...more on wrdlist --help 
+...more in wrdlist --help 
 ```
 
 > **Note:** Patterns must be enclosed in double quotes. For complex patterns, check how the output will look before continuing.
