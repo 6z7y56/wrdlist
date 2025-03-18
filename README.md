@@ -58,6 +58,29 @@ sudo cp ~/.cargo/bin/wrdlist /usr/bin
 sudo chmod +x /usr/bin/wrdlist
 ```
 
+### **Install from AUR (Arch Linux)**
+
+You can install `wrdlist` directly from the **AUR** using an AUR helper like `yay`:
+
+```bash
+yay -S wrdlist
+```
+
+### **Build and Install `wrdlist` Manually**
+
+If you want to build `wrdlist` from source, follow these steps:
+
+```bash
+git clone https://github.com/username/wrdlist.git
+cd wrdlist
+make install
+```
+
+To uninstall:
+
+```bash
+make uninstall
+```
 ---
 
 ## **Usage**
@@ -105,13 +128,13 @@ wrdlist [OPTIONS] <PATTERN> [OPTIONAL]
 
 ```bash
 # Generate a list of lowercase letters followed by digits
-wrdlist "!#"
-
-# Generate a list of numbers from 1 to 3, reversed
-wrdlist -i "[1-5]"
+wrdlist "#.!"
 
 # Randomize the order of a word list
-wrdlist -r "[1-13].X.d"
+wrdlist -r "[9-13]"
+
+# Generate a list of numbers from 1 to 3, reversed
+wrdlist -i ".#[1-5]._.X.d"
 
 ...more in wrdlist --help 
 ```
