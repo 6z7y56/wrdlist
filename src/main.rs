@@ -27,7 +27,7 @@ fn main() {
     
     // Handle version flag explicitly
     if args.len() == 2 && (args[1] == "--version" || args[1] == "-v") {
-        println!("wrdlist version 0.0.2");
+        println!("wrdlist version 0.0.5");
         return;
     }
 

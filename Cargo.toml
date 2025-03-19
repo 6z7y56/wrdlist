@@ -1,6 +1,6 @@
 [package]
 name = "wrdlist"
-version = "0.0.2"
+version = "0.0.5"
 edition = "2024"
 repository = "https://github.com/6z7y56/wrdlist"
 description = "Lightweight Wordlists Generator"
@@ -11,4 +11,4 @@ categories = ["command-line-utilities"]
 
 [dependencies]
 clap = { version = "4.5", features = ["derive"] }
-rand = "0.8"
+rand = "0.9.0"
